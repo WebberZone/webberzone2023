@@ -20,6 +20,7 @@ function wz23_enqueue_styles() {
 	wp_enqueue_style( 'wz23-fa-solid', get_stylesheet_directory_uri() . '/assets/css/solid.min.css', array( 'wz23-fa' ), KADENCE_VERSION );
 }
 add_action( 'wp_enqueue_scripts', 'wz23_enqueue_styles' );
+add_action( 'enqueue_block_editor_assets', 'wz23_enqueue_styles' );
 
 /**
  * Update Kadence default options.
